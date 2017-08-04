@@ -1,0 +1,98 @@
+{
+  "version": 2,
+  "targets": {
+    ".NETPortable,Version=v4.5,Profile=Profile49": {
+      "SQLite.Net-PCL/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SQLite.Net.Core-PCL": "3.1.1"
+        },
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        }
+      },
+      "SQLite.Net.Core-PCL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll": {}
+        }
+      },
+      "TinyIoC/1.3.0": {
+        "type": "package"
+      }
+    }
+  },
+  "libraries": {
+    "SQLite.Net-PCL/3.1.1": {
+      "sha512": "eIaIk+k4MwvBeKyzj1kgIegWXYZlaDAHNzsaYP7wNDgSqAdaza8FgCRun7mIZScJD/RIuKxN/b1V+bkC+/WIeA==",
+      "type": "package",
+      "path": "sqlite.net-pcl/3.1.1",
+      "files": [
+        "lib/MonoAndroid/SQLite.Net.Platform.XamarinAndroid.dll",
+        "lib/Windows8/SQLite.Net.Platform.WinRT.dll",
+        "lib/Xamarin.iOS10/SQLite.Net.Platform.XamarinIOS.Unified.dll",
+        "lib/monotouch/SQLite.Net.Platform.XamarinIOS.dll",
+        "lib/net4/SQLite.Net.Platform.Win32.dll",
+        "lib/net40/SQLite.Net.Platform.Generic.dll",
+        "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll",
+        "lib/portable-win81+wpa81/SQLite.Net.Platform.WinRT.dll",
+        "lib/windowsphone8/ARM/SQLite.Net.Platform.WindowsPhone8.dll",
+        "lib/windowsphone8/x86/SQLite.Net.Platform.WindowsPhone8.dll",
+        "sqlite.net-pcl.3.1.1.nupkg.sha512",
+        "sqlite.net-pcl.nuspec"
+      ]
+    },
+    "SQLite.Net.Core-PCL/3.1.1": {
+      "sha512": "/0VdXnyj2srEh5rM1RW/snXJrVGRsxGB3xjW4EkhZIig9N/8EocZZrEr0vwRJU8a9Lz4BrweoLyKwp2evmSIzg==",
+      "type": "package",
+      "path": "sqlite.net.core-pcl/3.1.1",
+      "files": [
+        "lib/portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1/SQLite.Net.dll",
+        "sqlite.net.core-pcl.3.1.1.nupkg.sha512",
+        "sqlite.net.core-pcl.nuspec"
+      ]
+    },
+    "TinyIoC/1.3.0": {
+      "sha512": "Feq2qg4uKWwemLhTLSxb/y+gdXegO3KBNUYkon3XpxZFTXWY6gUK7nguheeEH/8agm6oR1DMR5Al3MUK9p63pg==",
+      "type": "package",
+      "path": "tinyioc/1.3.0",
+      "files": [
+        "Content/TinyIoC.cs",
+        "tinyioc.1.3.0.nupkg.sha512",
+        "tinyioc.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "SQLite.Net-PCL >= 3.1.1",
+      "TinyIoC >= 1.3.0"
+    ],
+    ".NETPortable,Version=v4.5,Profile=Profile49": []
+  },
+  "packageFolders": {
+    "C:\\Users\\romul\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "restore": {
+      "projectUniqueName": "C:\\Users\\romul\\documents\\visual studio 2017\\Projects\\Todo Portable\\Todo.Portable\\Todo.Portable\\Todo.Portable.csproj",
+      "projectName": "Todo.Portable",
+      "projectPath": "C:\\Users\\romul\\documents\\visual studio 2017\\Projects\\Todo Portable\\Todo.Portable\\Todo.Portable\\Todo.Portable.csproj",
+      "projectJsonPath": "C:\\Users\\romul\\documents\\visual studio 2017\\Projects\\Todo Portable\\Todo.Portable\\Todo.Portable\\project.json",
+      "projectStyle": "ProjectJson"
+    },
+    "dependencies": {
+      "SQLite.Net-PCL": "3.1.1",
+      "TinyIoC": "1.3.0"
+    },
+    "frameworks": {
+      "portable45-net45+wp8": {}
+    }
+  }
+}

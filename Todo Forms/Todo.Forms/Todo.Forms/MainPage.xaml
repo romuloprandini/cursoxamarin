@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Todo.Forms"
+             x:Class="Todo.Forms.MainPage"
+             Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="ic_add" Text="Novo Todo"  
+                     Command="{Binding AddCommand}"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ListView 
+            x:Name="teste"
+            ItemsSource="{Binding Todos}" 
+                  ItemSelected="ListView_ItemSelected"
+                  RowHeight="50">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="40" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50" />
+                            </Grid.RowDefinitions>
+                            <StackLayout 
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Orientation="Vertical"
+                                VerticalOptions="FillAndExpand"
+                                HorizontalOptions="FillAndExpand">
+                                <Label Text="{Binding Nome}" 
+                                   FontAttributes="Bold"
+                                       TextColor="Red"
+                                       FontSize="20"/>
+                                <Label Text="{Binding Anotacao}" 
+                                   FontAttributes="Italic" />
+                            </StackLayout>
+                            <Image
+                                Grid.Column="1"
+                                Grid.Row="0"
+                                Source="ic_checkmark"
+                                IsVisible="{Binding Finalizado}" 
+                                HeightRequest="20"
+                                WidthRequest="20" 
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+
+</ContentPage>
